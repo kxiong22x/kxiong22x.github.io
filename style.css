@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette|Marmelad|Pangolin');
+
+.section-title {
+    font-size: 4vh;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+
+.sub-section-title {
+    font-size: 3vh;
+}
+
+* {
+    font-weight: 200;
+    text-align: center;
+}
+
+a {
+    text-decoration: underline;
+}
+
+.row {
+    padding-bottom: 2vh;
+    padding-top: 1.5vh;
+}
+
+img, svg {
+    vertical-align: middle;
+}
+
+/************************************************************* Page 1 **************************************************/
+ #intro-container {
+    height: 100vh;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("./images/profile.jpg");
+    background-position: 50%;
+}
+
+#intro-words {
+    float: right;
+    width: 50%;
+}
+
+#hi {
+    font-family: "Courgette", cursive;
+    font-size: 6vh;
+    padding-top: 30vh;
+    text-align: center;
+    text-shadow: white 1px 1px;
+    color: black;
+}
+
+#profile-name {
+    font-family: "Marmelad", sans-serif;
+    font-size: 3vh;
+    font-weight: 100;
+    overflow-wrap: break-word;
+    text-align: center;
+    text-shadow: white 1px 1px;
+    color:black;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("./images/profile.jpg");
+
+    /* Set a specific height */
+    /* height: 500px; */
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ /************************************************************* Page 2 **************************************************/
+hr { /*horizontal line*/
+    width: 80%;
+    margin-left: auto;
+    margin-right:auto;
+    background-color: slategray;
+    height:1px;
+}
+
+#about-me-container {
+    height: 100vh;
+    padding: 6vh 0;
+    margin: 2%;
+}
+
+.sub-text{
+    font-size: 2vh;
+}
+
+.icon-label {
+    font-size: 2.2vh;
+    font-weight: 400;
+}
+
+.bullet-point {
+    font-size: 2.2vh;
+    padding: 1.5vh;
+}
+
+.material-icons {
+    vertical-align: middle;
+}
+
+.contact-img {
+    height: 6vh;
+    width: 6vh;
+    margin: 2px;
+}
+
+/************************************************************* Page 3 *********************************************/
+.projects-container {
+    background-color: #000;
+    color: #fff;
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 6vh 0;
+}
+
+.class-name {
+    font-size: 3.2vh;
+}
+
+.project-title-container {
+    font-size: 2.5vh;
+}
+
+.final-project-title {
+    font-weight: 400;
+}
+
+.final-project-link {
+    color: #b3d1d1;
+    font-size: 2.5vh;
+    font-weight: 400;
+}
+ /************************************************************* Page 4 **************************************************/
+#map-container {
+    height: 100vh;
+    padding-top: 5vh;
+}
+
+#map {
+    height: 80%;
+}
+
+ /************************************************************* Page 5 **************************************************/
+#photos-container {
+    height: 100vh;
+    padding-bottom: 5vh;
+}
+
+#photos-container button{
+    background: transparent;
+    border-color: transparent;
+    outline: none;
+}
+
+.photo {
+    border: none;
+    height: 16.6vw;
+    width: 100%;
+    object-fit: cover;
+    padding: 1px;
+}
+.photo:hover {
+    -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    filter: grayscale(100%); /* FF 35+ */
+}
+
+.location-container {
+    background-image: url("white.jpg");
+    background-size: cover;
+    height: 16.6vw;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 200;
+    display: table;
+    text-align: center;
+}
+
+.location {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.modal-photo {
+    object-fit: contain;
+    width: 100%;
+}
+
+.modal-footer {
+    background-color: black;
+    color: rgb(211, 211, 211);
+    border: none;
+    justify-content: center;
+}
