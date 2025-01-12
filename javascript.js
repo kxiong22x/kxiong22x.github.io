@@ -1,4 +1,4 @@
-$('#exampleModal').on('show.bs.modal', function (event) {
+$('#myModal').on('show.bs.modal', function (event) {
   var button = $(event.relatedTarget) // Button that triggered the modal
   var pic = button.data('pic') // Extract info from data-* attributes
   var caption = button.data('caption')
