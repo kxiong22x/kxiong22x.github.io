@@ -28,6 +28,15 @@ img, svg {
     vertical-align: middle;
 }
 
+.show-on-scroll {
+    opacity: 0;  /* Initially hide the element */
+    transition: opacity 1s ease-in-out;  /* Smooth transition when becoming visible */
+  }
+
+  .show-on-scroll.is-visible {
+    opacity: 1;  /* When visible, fade in */
+  }
+
 /************************************************************* Page 1 **************************************************/
  #intro-container {
     height: 100vh;

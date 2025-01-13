@@ -1,3 +1,4 @@
+// For the modal
 $('#myModal').on('show.bs.modal', function (event) {
   var button = $(event.relatedTarget) // Button that triggered the modal
   var pic = button.data('pic') // Extract info from data-* attributes
@@ -8,7 +9,7 @@ $('#myModal').on('show.bs.modal', function (event) {
   $('#modal-caption').html(caption);
 })
 
-// Detect request animation frame
+// For making text show up when scrolling
 var scroll = window.requestAnimationFrame || function(callback){ window.setTimeout(callback, 1000/60)};
 var elementsToShow = document.querySelectorAll('.show-on-scroll'); 
 function loop() {
@@ -40,7 +41,7 @@ function isElementInViewport(el) {
   );
 }
 
-// Initialize and add the map
+// Google Maps
 var map = new google.maps.Map(document.getElementById('map'),{
     zoom: 3,
     center: new google.maps.LatLng(25.295202586754595, -51.9337846719139),
