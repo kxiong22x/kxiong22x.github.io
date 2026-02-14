@@ -30,27 +30,27 @@
 }
 
 .date {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #555;
   min-width: 5rem;
   text-align: left;
 }
 
 .publication {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 500;
   min-width: 12rem;
   text-align: left;
 }
 
 .title {
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-align: left;
   font-weight: 400;
 }
 
 .titleNoLink {
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-align: left;
 }
 
