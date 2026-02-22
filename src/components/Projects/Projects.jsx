@@ -36,6 +36,11 @@ const projects = [
     title: '6.4212 Robotic Manipulation',
     description: 'Robot Whack-a-Mole Player: A robot that plays Whack-a-Mole',
     link: 'https://www.youtube.com/watch?v=FfJWKTg6WFI',
+  },
+  {
+    title: 'Tractor',
+    description: 'Play the card game Tractor online!',
+    link: 'https://kxiong22x.github.io/tractor'
   }
 ]
 
