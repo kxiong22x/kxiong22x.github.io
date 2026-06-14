@@ -40,12 +40,12 @@ const projects = [
   {
     title: 'Tractor',
     description: 'Play the card game Tractor online!',
-    link: 'https://kxiong22x.github.io/tractor'
+    link: 'https://katherinexiong.com/tractor'
   },
   {
     title: 'Spending Tracker',
     description: 'Analyze your credit card spending!',
-    link: 'https://kxiong22x.github.io/spending'
+    link: 'https://spending.katherinexiong.com'
   }
 ]
 
