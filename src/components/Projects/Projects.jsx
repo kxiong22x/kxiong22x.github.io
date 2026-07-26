@@ -3,6 +3,16 @@ import styles from './Projects.module.css'
 
 const projects = [
   {
+    title: 'Tractor',
+    description: 'Play the card game Tractor online!',
+    link: 'https://katherinexiong.com/tractor'
+  },
+  {
+    title: 'Spending Tracker',
+    description: 'Analyze your credit card spending!',
+    link: 'https://spending.katherinexiong.com'
+  },
+  {
     title: 'M.Eng. Thesis',
     description: 'Beyond Dark Patterns: A Concept-Based Framework for Ethical Software Design',
     link: 'https://dl.acm.org/doi/10.1145/3613904.3642781',
@@ -32,21 +42,11 @@ const projects = [
     description: 'Music Sync Lights: LED light system that automatically syncs to music',
     link: 'https://www.youtube.com/watch?v=vCCKnwrtTOI',
   },
-  {
-    title: '6.4212 Robotic Manipulation',
-    description: 'Robot Whack-a-Mole Player: A robot that plays Whack-a-Mole',
-    link: 'https://www.youtube.com/watch?v=FfJWKTg6WFI',
-  },
-  {
-    title: 'Tractor',
-    description: 'Play the card game Tractor online!',
-    link: 'https://katherinexiong.com/tractor'
-  },
-  {
-    title: 'Spending Tracker',
-    description: 'Analyze your credit card spending!',
-    link: 'https://spending.katherinexiong.com'
-  }
+  // {
+  //   title: '6.4212 Robotic Manipulation',
+  //   description: 'Robot Whack-a-Mole Player: A robot that plays Whack-a-Mole',
+  //   link: 'https://www.youtube.com/watch?v=FfJWKTg6WFI',
+  // },
 ]
 
 function Projects() {
