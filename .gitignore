@@ -19,3 +19,5 @@ build/
 
 # Vite cache
 .vite/
+
+CLAUDE.md
