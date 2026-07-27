@@ -74,6 +74,12 @@
     padding: 2rem 1.5rem;
   }
 
+  .photoWrapper {
+    flex: none;
+    display: flex;
+    justify-content: center;
+  }
+
   .photo {
     width: 100%;
     height: auto;
@@ -82,5 +88,19 @@
 
   .heading {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1.5rem 1rem;
+  }
+
+  .heading {
+    font-size: 1.75rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.1rem;
   }
 }

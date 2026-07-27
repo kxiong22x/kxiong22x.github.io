@@ -1,5 +1,5 @@
 import styles from './AboutMe.module.css'
-import profilePhoto from '/images/profile.jpg'
+import profilePhoto from '/images/profile_new.jpg'
 
 function AboutMe() {
   return (
@@ -12,7 +12,7 @@ function AboutMe() {
         />
       </div>
       <div className={styles.textWrapper}>
-        <h1 className={styles.heading}>Hi, I'm Katherine Xiong</h1>
+        <h1 className={styles.heading}>Hi, I'm Katherine</h1>
 
         <div className={styles.section}>
           <h2 className={styles.sectionTitle}>Education</h2>
