@@ -1,0 +1,42 @@
+:root {
+  --color-white: #ffffff;
+  --color-text: #213547;
+  --color-text-hover: #3a5a6f;
+  --color-accent: #6e8b96;
+  --color-muted: #555555;
+  --color-muted-light: #9a9a9a;
+  --color-border: #e5e5e5;
+  --shadow-soft: rgba(0, 0, 0, 0.08);
+  --shadow-medium: rgba(0, 0, 0, 0.12);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    sans-serif;
+  min-height: 100vh;
+  background-color: var(--color-white);
+  color: var(--color-text);
+  font-weight: 200;
+  overflow-x: hidden;
+}
+
+.fadeIn {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fadeIn.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

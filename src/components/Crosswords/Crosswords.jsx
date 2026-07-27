@@ -1,4 +1,5 @@
-import { useFadeIn } from '../../hooks/useFadeIn'
+import FadeIn from '../FadeIn/FadeIn'
+import ExternalLink from '../ExternalLink/ExternalLink'
 import styles from './Crosswords.module.css'
 
 const crosswords = [
@@ -35,33 +36,25 @@ const crosswords = [
 ]
 
 function Crosswords() {
-  const heading = useFadeIn()
-  const rows = crosswords.map(() => useFadeIn())
-
   return (
     <section className={styles.container}>
-      <div ref={heading.ref} className={`fadeIn ${heading.isVisible ? 'visible' : ''}`}>
+      <FadeIn>
         <h1 className={styles.heading}>Crosswords</h1>
         <p className={styles.blurb}>I write crosswords for fun sometimes - here are the ones that have been published!</p>
-      </div>
+      </FadeIn>
       <div className={styles.grid}>
-        {crosswords.map((crossword, index) => (
-          <div key={index} ref={rows[index].ref} className={`${styles.row} fadeIn ${rows[index].isVisible ? 'visible' : ''}`}>
+        {crosswords.map((crossword) => (
+          <FadeIn key={`${crossword.publication}-${crossword.date}`} className={styles.row}>
             <span className={styles.date}>{crossword.date}</span>
             <span className={styles.publication}>{crossword.publication}</span>
             {crossword.link ? (
-              <a
-                href={crossword.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.title}
-              >
+              <ExternalLink href={crossword.link} className={styles.title}>
                 {crossword.title}
-              </a>
+              </ExternalLink>
             ) : (
               <span className={styles.titleNoLink}>{crossword.title}</span>
             )}
-          </div>
+          </FadeIn>
         ))}
       </div>
     </section>

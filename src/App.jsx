@@ -1,16 +1,27 @@
-import './App.css'
 import Navbar from './components/Navbar/Navbar'
 import AboutMe from './components/AboutMe/AboutMe'
 import Projects from './components/Projects/Projects'
 import Crosswords from './components/Crosswords/Crosswords'
+import { SECTIONS } from './constants/sections'
+
+const sectionComponents = {
+  about: AboutMe,
+  projects: Projects,
+  crosswords: Crosswords,
+}
 
 function App() {
   return (
     <>
       <Navbar />
-      <div id="about"><AboutMe /></div>
-      <div id="projects"><Projects /></div>
-      <div id="crosswords"><Crosswords /></div>
+      {SECTIONS.map(({ id }) => {
+        const SectionComponent = sectionComponents[id]
+        return (
+          <div id={id} key={id}>
+            <SectionComponent />
+          </div>
+        )
+      })}
     </>
   )
 }

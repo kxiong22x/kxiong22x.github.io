@@ -1,14 +1,9 @@
 import { useState } from 'react'
 import { useActiveSection } from '../../hooks/useActiveSection'
+import { SECTIONS } from '../../constants/sections'
 import styles from './Navbar.module.css'
 
-const links = [
-  { id: 'about', label: 'About Me' },
-  { id: 'projects', label: 'Projects' },
-  { id: 'crosswords', label: 'Crosswords' },
-]
-
-const sectionIds = links.map((link) => link.id)
+const sectionIds = SECTIONS.map((section) => section.id)
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -27,14 +22,14 @@ function Navbar() {
         <span className={styles.menuIcon} />
       </button>
       <div className={`${styles.linkList} ${isOpen ? styles.linkListOpen : ''}`}>
-        {links.map((link) => (
+        {SECTIONS.map((section) => (
           <a
-            key={link.id}
-            href={`#${link.id}`}
-            className={`${styles.link} ${activeId === link.id ? styles.active : ''}`}
+            key={section.id}
+            href={`#${section.id}`}
+            className={`${styles.link} ${activeId === section.id ? styles.active : ''}`}
             onClick={closeMenu}
           >
-            {link.label}
+            {section.label}
           </a>
         ))}
       </div>

@@ -1,4 +1,5 @@
-import { useFadeIn } from '../../hooks/useFadeIn'
+import FadeIn from '../FadeIn/FadeIn'
+import ExternalLink from '../ExternalLink/ExternalLink'
 import styles from './Projects.module.css'
 
 const projects = [
@@ -58,31 +59,26 @@ const projects = [
 ]
 
 function Projects() {
-  const heading = useFadeIn()
-  const cards = projects.map(() => useFadeIn())
-
   return (
     <section className={styles.container}>
-      <div ref={heading.ref} className={`fadeIn ${heading.isVisible ? 'visible' : ''}`}>
+      <FadeIn>
         <h1 className={styles.heading}>Projects</h1>
         <p className={styles.blurb}>From MIT and beyond!</p>
-      </div>
+      </FadeIn>
       <div className={styles.grid}>
-        {projects.map((project, index) => (
-          <a
-            key={index}
-            ref={cards[index].ref}
+        {projects.map((project) => (
+          <FadeIn
+            key={project.title}
+            as={ExternalLink}
             href={project.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`${styles.card} fadeIn ${cards[index].isVisible ? 'visible' : ''}`}
+            className={styles.card}
           >
             {project.image && (
               <img src={project.image} alt={project.title} className={styles.cardImage} />
             )}
             <h2 className={styles.cardTitle}>{project.title}</h2>
             <p className={styles.cardDescription}>{project.description}</p>
-          </a>
+          </FadeIn>
         ))}
       </div>
     </section>

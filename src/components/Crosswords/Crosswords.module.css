@@ -13,7 +13,7 @@
 .blurb {
   text-align: center;
   font-size: 1.5rem;
-  color: #555;
+  color: var(--color-muted);
   margin-bottom: 2rem;
 }
 
@@ -31,7 +31,7 @@
 
 .date {
   font-size: 1rem;
-  color: #555;
+  color: var(--color-muted);
   min-width: 5rem;
   text-align: left;
 }
@@ -47,7 +47,7 @@
   font-size: 1rem;
   text-align: left;
   font-weight: 400;
-  color: #6E8B96;
+  color: var(--color-accent);
 }
 
 .titleNoLink {
