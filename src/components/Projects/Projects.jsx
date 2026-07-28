@@ -6,7 +6,7 @@ const projects = [
   {
     title: 'Tractor',
     description: 'Play the card game Tractor online!',
-    link: 'https://katherinexiong.com/tractor',
+    link: 'https://tractor.katherinexiong.com',
     // image: '/images/tractor.jpg',
   },
   {
